@@ -4,4 +4,3 @@ using ConfBinder;
 Console.WriteLine("init confb");
 
 var seb = new SeBuild();
-
