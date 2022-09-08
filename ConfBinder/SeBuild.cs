@@ -23,6 +23,12 @@ namespace ConfBinder
 
     public class PositionOptions
     {
+        public class PositionParameter
+        {
+            public string Port { get; set; } = String.Empty;
+            public string Address { get; set; } = String.Empty;
+        }
+
         public const string Position = "Position";
 
         public string Title { get; set; } = String.Empty;
@@ -31,13 +37,5 @@ namespace ConfBinder
         public List<string>? Devs { get; set; }
 
         public PositionParameter? Param { get; set; }
-    }
-
-    public class PositionParameter
-    {
-        //public const string Position = "Position";
-
-        public string Port { get; set; } = String.Empty;
-        public string Address { get; set; } = String.Empty;
     }
 }
